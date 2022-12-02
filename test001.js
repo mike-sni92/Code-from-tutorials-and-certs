@@ -18,3 +18,11 @@ const myArray = [["John", 23], ["cat", 2]];
 // Only change code below this line
 var removedFromMyArray = myArray.pop();
 myArray.pop[1] ;
+
+  
+  // Setup Manipulate Arrays With shift()
+const myArray = [["John", 23], ["dog", 3]];
+
+// Only change code below this line
+myArray.shift[0];
+const removedFromMyArray = myArray.shift(1);
