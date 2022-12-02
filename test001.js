@@ -7,3 +7,14 @@ const wordBlanks ="this noun " + myNoun + "followed by my verb " + myVerb + "the
 
 function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
   var result = "";
+  
+  
+const myArray = [["John", 23], ["cat", 2]];
+  myArray.push(["dog", 3]) ;
+  
+  
+  const myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line
+var removedFromMyArray = myArray.pop();
+myArray.pop[1] ;
