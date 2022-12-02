@@ -4,3 +4,6 @@ const myVerb = "ran";
 const myAdverb = "quickly";
 
 const wordBlanks ="this noun " + myNoun + "followed by my verb " + myVerb + "then my adjective" + myAdjective + "and my adverb " + myAdverb + "." ;
+
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+  var result = "";
