@@ -26,3 +26,17 @@ const myArray = [["John", 23], ["dog", 3]];
 // Only change code below this line
 myArray.shift[0];
 const removedFromMyArray = myArray.shift(1);
+
+  
+  *******************************************************
+  
+  var processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+processed = processArg(7);
+  //processed should be equal to 2.
+  
+  *******************************************************
