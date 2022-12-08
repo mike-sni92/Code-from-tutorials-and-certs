@@ -28,7 +28,7 @@ myArray.shift[0];
 const removedFromMyArray = myArray.shift(1);
 
   
-  *******************************************************
+//  *******************************************************
   
   var processed = 0;
 
@@ -39,7 +39,7 @@ function processArg(num) {
 processed = processArg(7);
   //processed should be equal to 2.
   
-  *******************************************************
+  //*******************************************************
     
     //Untested
     
@@ -59,7 +59,7 @@ console.log("Before: " + JSON.stringify(testArr));
 console.log(nextInLine(testArr, 6));
 console.log("After: " + JSON.stringify(testArr));
   
-    *******************************************************
+    //*******************************************************
       
       
       function orderMyLogic(val) {
@@ -91,7 +91,7 @@ orderMyLogic(7);
   orderMyLogic(6);
   orderMyLogic(11);
   
-  *******************************************************
+  //*******************************************************
     
     //Chained else if statement
     
@@ -124,10 +124,30 @@ Passed:testSize(15) should return the string Large
 Passed:testSize(17) should return the string Large
 Passed:testSize(20) should return the string Huge
 Passed:testSize(25)
-/*
+*/
   
   
-  *******************************************************
-    
-    
+  //*******************************************************
+    //how does this work? is "===" absolutely necessary? why the minus sign in between strokes and par??
+    // https://github.com/EQuimper/CodeChallenge/blob/master/javascript/FreeCodeCamps/Basic%20JavaScript/Golf%20Code.md
+  function golfScore(par, strokes) {
+
+  if (strokes === 1) return "Hole-in-one!";
+
+  else if ((strokes - par) <= -2) return 'Eagle';
+
+  else if ((strokes - par) === -1) return 'Birdie';
+
+  else if (strokes === par) return 'Par';
+
+  else if ((strokes - par) === 1) return 'Bogey';
+
+  else if ((strokes - par) === 2) return 'Double Bogey';
+
+  else return 'Go Home!';
+
+}
+
+// Change these values to test
+golfScore(5, 1);
   
