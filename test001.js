@@ -92,4 +92,42 @@ orderMyLogic(7);
   orderMyLogic(11);
   
   *******************************************************
+    
+    //Chained else if statement
+    
+    function testSize(num) {
+
+  if (num < 5) {
+    return "Tiny";
+  } 
+  else if (num < 9) {
+    return "Small";
+  } 
+  else if (num < 15) {
+    return "Medium";
+  }
+  else if (num < 19) {
+    return "Large";
+  }
+  else {
+    return "Huge";
+  }
+}
+/*
+testSize(0) should return the string Tiny
+Passed:testSize(4) should return the string Tiny
+Passed:testSize(5) should return the string Small
+Passed:testSize(8) should return the string Small
+Passed:testSize(10) should return the string Medium
+Passed:testSize(14) should return the string Medium
+Passed:testSize(15) should return the string Large
+Passed:testSize(17) should return the string Large
+Passed:testSize(20) should return the string Huge
+Passed:testSize(25)
+/*
+  
+  
+  *******************************************************
+    
+    
   
