@@ -305,3 +305,34 @@ Passed:You should be using the variable playerNumber in your bracket notation
 */
 
   //*******************************************************
+
+//LOOKUP vs switch https://github.com/EQuimper/CodeChallenge/blob/master/javascript/FreeCodeCamps/Basic%20JavaScript/Using%20Objects%20for%20Lookups.md
+var alpha = {
+  1:"Z",
+  2:"Y",
+  3:"X",
+  4:"W",
+  ...
+  24:"C",
+  25:"B",
+  26:"A"
+};
+alpha[2]; // "Y"
+alpha[24]; // "C"
+
+var value = 2;
+alpha[value]; // "Y"
+  
+  function phoneticLookup(val) {
+  var result = "";
+
+  var lookup = {
+    "alpha": "Adams",
+    "bravo": "Boston",
+    "charlie": "Chicago",
+    "delta": "Denver",
+    "echo": "Easy",
+    "foxtrot": "Frank"
+  };
+  
+    //*******************************************************
