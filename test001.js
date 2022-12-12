@@ -351,5 +351,16 @@ var myObj = {
   return "Not Found";
       
           //*******************************************************
+//Testing Objects for Properties
 
-
+function checkObj(obj, checkProp) {
+  
+  if (obj.hasOwnProperty(checkProp)) 
+  return obj[checkProp];
+    else { return "Not Found";}
+}
+      console.log(checkObj("city"));
+      
+/*checkObj({pet: "kitten", bed: "sleigh"}, "gift") should return the string Not Found.
+checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift") should return the string pony
+*/
