@@ -336,3 +336,20 @@ alpha[value]; // "Y"
   };
   
     //*******************************************************
+    
+    function checkObj(obj, checkProp) {
+  // Only change code below this line
+var myObj = {
+  pet: "kitten",
+  bed: "sleigh",
+  city: "Seattle"
+ 
+};
+
+  if (myObj.hasOwnProperty(checkProp)) return myObj[checkProp];
+
+  return "Not Found";
+      
+          //*******************************************************
+
+
