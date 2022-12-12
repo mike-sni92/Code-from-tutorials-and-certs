@@ -31,6 +31,17 @@ const removedFromMyArray = myArray.shift(1);
 
   
 //  *******************************************************
+  // _test add an array onto js obj
+  const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.bark = "bork";
+  
+  //  *******************************************************
   
   var processed = 0;
 
