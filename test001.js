@@ -1,3 +1,5 @@
+//** _test ** test code in IDE
+
 const myNoun = "dog";
 const myAdjective = "big";
 const myVerb = "ran";
@@ -180,3 +182,26 @@ processed = processArg(7);
   
   //*******************************************************
   
+
+  // NEED TO TEST IN IDE  _test
+function abTest(a, b) {
+
+
+  if (a < 0 || b < 0) return undefined;
+
+/*
+abTest(2, 2) should return a number
+Passed:abTest(2, 2) should return 8
+Passed:abTest(-2, 2) should return undefined
+Passed:abTest(2, -2) should return undefined
+Passed:abTest(2, 8) should return 18
+Passed:abTest(3, 3) should return 12
+Passed:abTest(0, 0) should return 0
+*/
+
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+
+abTest(2,2);
+  
+    //*******************************************************
