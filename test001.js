@@ -263,4 +263,16 @@ tails: 3,
 friends: ["Phelix", "Doug", "Scooby"]
     
     //*******************************************************
+    // dot notation
     
+    const testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+
+const hatValue = testObj.hat;      // Change this line
+const shirtValue = testObj.shirt;    // Change this line
+//hatvalue will return "ballcap" / shirtvalue will return "jersey"
+  
+  //*******************************************************
