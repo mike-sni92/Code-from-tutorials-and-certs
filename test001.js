@@ -364,3 +364,35 @@ function checkObj(obj, checkProp) {
 /*checkObj({pet: "kitten", bed: "sleigh"}, "gift") should return the string Not Found.
 checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift") should return the string pony
 */
+
+      //*******************************************************
+      const myMusic = [
+  {
+    "artist": "Billy Joel" + "Daft Punk",
+    "title": "Piano Man" + "Daft AF",
+    "release_year": 1973 + 2009,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  }
+,
+  {
+    "artist": "Daft Punk",
+    "title": "Daft AF",
+    "release_year": 1973 + 2009,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "silver": true
+  }
+];
+      //*******************************************************
+      
+      
+      
+      
