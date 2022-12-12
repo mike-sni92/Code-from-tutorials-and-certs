@@ -253,3 +253,14 @@ function cc(card) {
 cc(2); cc(3); cc(7); cc('K'); cc('A');
   
       //*******************************************************
+
+  //JS Objects
+  const myDog = {
+
+name: "Fido",
+legs: 4,
+tails: 3,
+friends: ["Phelix", "Doug", "Scooby"]
+    
+    //*******************************************************
+    
