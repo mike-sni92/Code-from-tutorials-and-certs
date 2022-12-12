@@ -263,7 +263,7 @@ tails: 3,
 friends: ["Phelix", "Doug", "Scooby"]
     
     //*******************************************************
-    // dot notation
+    // dot notation & Accessing Object Properties with Variables
     
     const testObj = {
   "hat": "ballcap",
@@ -275,4 +275,22 @@ const hatValue = testObj.hat;      // Change this line
 const shirtValue = testObj.shirt;    // Change this line
 //hatvalue will return "ballcap" / shirtvalue will return "jersey"
   
+
+const testObj = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
+
+const playerNumber = 16;  
+const player = testObj[playerNumber]
+
+/* conditions playerNumber should be a number
+Passed:The variable player should be a string
+Passed:The value of player should be the string Montana
+Passed:You should use bracket notation to access testObj
+Passed:You should not assign the value Montana to the variable player directly.
+Passed:You should be using the variable playerNumber in your bracket notation
+*/
+
   //*******************************************************
