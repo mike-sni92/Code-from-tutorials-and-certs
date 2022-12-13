@@ -392,7 +392,40 @@ checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift") should return the
   }
 ];
       //*******************************************************
+function updateRecords(id, prop, value) {
+
+  if (value === '') {
+    delete recordCollection[id][prop]; 
+  } else if (prop !== tracks) {
+    recordCollection[id][prop] = value;
+  } else {
+    if (!recordCollection[id].hasOwnProperty(tracks)) {
+      recordCollection[id].tracks = [];
+      recordCollection[id].tracks.push(value);
+    } else {
+      recordCollection[id].tracks.push(value);
+    }
+  }
+  return recordCollection;
+ 
+}
+      
+      
+      /*    answer key#1
+      https://www.freecodecamp.org/news/how-to-solve-the-record-collection-challenge/
+      */
+      
+    function updateRecords(id, prop, value) {
+      if (prop !== tracks && value !== '') {
+      
+      }
+    
+    }
       
       
       
+      
+            //*******************************************************
+      
+            //*******************************************************
       
