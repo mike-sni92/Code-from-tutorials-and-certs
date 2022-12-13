@@ -392,21 +392,24 @@ checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift") should return the
   }
 ];
       //*******************************************************
+      /*
+      https://github.com/EQuimper/CodeChallenge/blob/master/javascript/FreeCodeCamps/Basic%20JavaScript/Record%20Collection.md
+      */
 function updateRecords(id, prop, value) {
 
   if (value === '') {
-    delete recordCollection[id][prop]; 
+    delete records[id][prop]; 
   } else if (prop !== tracks) {
-    recordCollection[id][prop] = value;
+    records[id][prop] = value;
   } else {
-    if (!recordCollection[id].hasOwnProperty(tracks)) {
-      recordCollection[id].tracks = [];
-      recordCollection[id].tracks.push(value);
+    if (!records[id].hasOwnProperty(tracks)) {
+      records[id].tracks = [];
+      records[id].tracks.push(value);
     } else {
-      recordCollection[id].tracks.push(value);
+      records[id].tracks.push(value);
     }
   }
-  return recordCollection;
+  return records;
  
 }
       
@@ -414,14 +417,18 @@ function updateRecords(id, prop, value) {
       /*    answer key#1
       https://www.freecodecamp.org/news/how-to-solve-the-record-collection-challenge/
       */
-      
-    function updateRecords(id, prop, value) {
-      if (prop !== tracks && value !== '') {
-      
-      }
-    
-    }
-      
+function updateRecords(records, id, prop, value) {
+  if (prop !== 'tracks' && value !== "") {
+    records[id][prop] = value
+  } else if (prop === 'tracks' && records[id].hasOwnProperty('tracks') === false) {
+    records[id][prop] = [value]
+  } else if (prop === 'tracks' && value !== "") {
+    records[id][prop].push(value)
+  } else if (value === "") {
+    delete records[id][prop]
+  }
+  return records;
+}
       
       
       
