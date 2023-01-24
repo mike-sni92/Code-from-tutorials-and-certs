@@ -1,0 +1,36 @@
+///"The span[class~="sr-only"] selector will select any span element whose class includes sr-only."///
+span[class~="sr-only"] {
+  property: value;
+
+}
+
+
+///The clip-path property determines the shape the clip property should take. 
+Set both the clip-path and -webkit-clip-path properties to the value of inset(50%), forming the clip-path into a rectangle within the element.
+clip-path.
+
+span[class~="sr-only"] {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+
+}
+
+///To prevent the text content from overflowing, give your span[class~="sr-only"] selector an overflow property set to hidden and 
+a white-space property set to nowrap.///
+
+/*The :first-of-type pseudo-selector is used to target the first element that matches the selector.*/
+
+/*The last part of your table heading is your years. Create a #years selector, and enable flexbox. 
+Justify the content to the end of the flex direction, and make the element sticky. 
+Fix it to the top of its container with top: 0.
+*/
+
+#years {
+  display: flex;
+  top: 0;
+  justify-content: flex-end;
+  position: sticky;
+}
+
