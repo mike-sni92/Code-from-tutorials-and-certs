@@ -1,13 +1,13 @@
-///"The span[class~="sr-only"] selector will select any span element whose class includes sr-only."///
+/*"The span[class~="sr-only"] selector will select any span element whose class includes sr-only."*/
 span[class~="sr-only"] {
   property: value;
 
 }
 
 
-///The clip-path property determines the shape the clip property should take. 
+/*The clip-path property determines the shape the clip property should take. 
 Set both the clip-path and -webkit-clip-path properties to the value of inset(50%), forming the clip-path into a rectangle within the element.
-clip-path.
+clip-path. */
 
 span[class~="sr-only"] {
   border: 0;
@@ -59,3 +59,5 @@ set to 0.5rem calc(1.25rem + 2px) 0.5rem 0. */
 
 /* The [attribute="value"] selector targets any element that has an attribute with a specific value. 
 Create a tr[class="total"] selector to target specifically your tr elements with the total class.  */
+
+/*The :nth-of-type() pseudo-selector is used to target specific elements based on their order among siblings of the same type.*/
