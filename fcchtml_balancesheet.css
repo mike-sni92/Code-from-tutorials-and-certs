@@ -56,3 +56,6 @@ set to 0.5rem calc(1.25rem + 2px) 0.5rem 0. */
   margin: 0 -2px;
   padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
 }
+
+/* The [attribute="value"] selector targets any element that has an attribute with a specific value. 
+Create a tr[class="total"] selector to target specifically your tr elements with the total class.  */
