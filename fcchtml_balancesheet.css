@@ -219,3 +219,7 @@ tr.data td {
   padding: 0.3rem 0.25rem 0;
   text-align: right;
 }
+
+
+/*The @media at-rule, also known as a media query, is used to conditionally apply CSS. 
+Media queries are commonly used to apply CSS based on the viewport width using the max-width and min-width properties.*/
