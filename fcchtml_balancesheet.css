@@ -223,3 +223,16 @@ tr.data td {
 
 /*The @media at-rule, also known as a media query, is used to conditionally apply CSS. 
 Media queries are commonly used to apply CSS based on the viewport width using the max-width and min-width properties.*/
+
+@media (max-width: 768px) {
+  #piano {
+    width: 358px;
+  }
+
+  .keys {
+    width: 318px;
+  }
+}
+
+/* Set overflow to hidden in the first .keys selector, to take care of this issue. STEP31
+This property will hide any element that is pushed outside the set width value of .keys. */
