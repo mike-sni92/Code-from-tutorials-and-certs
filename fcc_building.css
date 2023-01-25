@@ -65,3 +65,27 @@ Add the same display, align-items, and justify-content properties and values to 
   display: flex;
   align-items: flex-end;
   justify-content: space-evenly;
+
+
+------------------------------------------------------------------------------------------------------------------
+/*
+
+https://github.com/freeCodeCamp/freeCodeCamp/issues/47568
+DISCUSSION STEP 40
+
+Gradients in CSS are a way to transition between colors across the distance of an element. 
+They are applied to the background property and the syntax looks like this:
+
+gradient-type(
+  color1,
+  color2
+);
+
+*/
+
+  background: linear-gradient(var(--building-color1), var(--window-color1)); /* correct syntax */
+
+  background: linear-gradient(
+    --building-color1,
+    --window-color1);
+/*incorrect syntax*/
