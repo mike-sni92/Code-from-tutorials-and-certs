@@ -433,6 +433,46 @@ function updateRecords(records, id, prop, value) {
       
       
             //*******************************************************
-      
+      Replit first code "intro to JS"
             //*******************************************************
       
+      
+      // Ask the user what month it is
+const month = parseInt(prompt("What month is it? (0 is January, 6 is June, 12 is December etc)"));
+
+switch (month) {
+  case '0': {
+    const month = 'January';
+        console.log(month);
+    break;
+  }
+    case '1': {
+    const month = 'February';
+        console.log(month);
+    break;
+  }
+      default:
+    console.log("Empty action received.");
+}
+
+// Can you use a switch statement to print which month it is?
+
+
+// Ask the user how old they are
+const age = parseInt(prompt("How old are you?"));
+
+// Can you finish this if statement?
+if (age >= 18) { // if (age is greater than or equal to 18)
+	console.log("You're an adult!");
+}
+
+else if (age >= 12) { // else if (age is greater than 12)
+	console.log("You're a teenager!");
+}
+
+else {
+	console.log("You're a child!");
+}
+
+
+                  //*******************************************************
