@@ -261,6 +261,33 @@ function cc(card) {
 
 // Add/remove calls to test your function.
 // Note: Only the last will display
+	//code below is not accepted for some reason
+	function cc(card) {
+  // Only change code below this line
+  switch (card) {
+    case 2 , 3, 4, 5, 6:
+    return "5 Bet";
+    break;
+    case 7, 8, 9:
+    return "0 Hold";
+    break;
+    case 10, "J", "Q", "K", "A":
+    return "-5 Hold";
+    break;
+    case 3, 7, "Q", 8, "A":
+    return "-1 Hold";
+    break;
+    case 2, "J", 9, 2, 7:
+    return "1 Bet";
+    break;
+    case 2, 2, 10:
+    return "1 Bet";
+    break;
+    case 3, 2, "A", 10, "K":
+    return "-1 Hold";
+    break;
+  }
+	
 cc(2); cc(3); cc(7); cc('K'); cc('A');
   
       //*******************************************************
