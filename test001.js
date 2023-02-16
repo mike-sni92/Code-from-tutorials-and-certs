@@ -387,7 +387,9 @@ function checkObj(obj, checkProp) {
     else { return "Not Found";}
 }
       console.log(checkObj("city"));
-      
+/*
+note: if obj has own property, it returns checkProp value..
+*/
 /*checkObj({pet: "kitten", bed: "sleigh"}, "gift") should return the string Not Found.
 checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift") should return the string pony
 */
