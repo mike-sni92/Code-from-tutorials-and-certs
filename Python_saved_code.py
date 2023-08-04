@@ -106,3 +106,40 @@ for i in range(3):
   print("Welcome,", i)
   #output = Welcome, 0 Welcome, 1 Welcome, 2
 
+
+def welcome_msg(first_name, last_name):
+  print("Welcome,", first_name, last_name)
+
+welcome_msg("test", "name")
+
+#test name = arguements // welcome_msg = function // first_name, last_name = parameters
+# A return statement is a Python statement that executes inside a function and sends information back to the function call.
+
+#RETURNs
+def calculate_fails(total_attempts, failed_attempts):
+  fail_percentage = failed_attempts / total_attempts
+  return fail_percentage
+
+calculate_fails(4, 2)
+#output = .5
+    #When we run this, the function returns the percentage of failed attempts. It’s .5, or 50 percent, but in some Python environments, this might not be printed to the screen.We cannot use the specific variable named fail_percentage outside of the function. So, in order to use this information in another part of the program, we would need to return the value from the function and assign it to a new variable.
+# You would want the output to display something else.
+def calculate_fails(total_attempts, failed_attempts):
+  fail_percentage = failed_attempts / total_attempts
+  return fail_percentage
+
+percentage = calculate_fails(4, 2)
+
+if percentage <= 0.5:
+  print("Act Lok")
+  #output = "Act Lok"
+
+
+def remaining_login_attempts(maximum_attempts, total_attempts):
+    return maximum_attempts - total_attempts
+remaining_attempts = remaining_login_attempts(3, 2)
+if remaining_attempts <= 0:
+    print("Your account is locked")
+else:
+ print("system updated")
+#output = systemp updated
