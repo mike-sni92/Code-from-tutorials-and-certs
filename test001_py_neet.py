@@ -17,3 +17,12 @@ print('n =', n)
 
 #NETWORKCHUCK
 
+#Google Cyber Sec Python notes, tuple data types are unchangeable, run test code at later time, tried print(tuple variable + string) == invalid response by python.
+
+OS = "OS_4"
+if OS == "OS_2":
+ print("system update needed")
+elif OS == "OS_1":
+ print("system update badly needed")
+else:
+ print("system updated")
