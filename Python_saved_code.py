@@ -174,3 +174,20 @@ print(sorted(time_list))
 print(time_list)
 #What if you wanted to change the variable to the sorted numbers.
 
+
+#WEEK 3 Gsec cert, to test on env to refresh
+
+new_string = str(123)
+old_string = str(456)
+print(type(new_string))
+print(len(new_string))
+print(new_string + old_string)
+
+old = "new"
+new = "old"
+print (new + old)
+old[0:2] #indices
+#search in string
+print("HELLOOOOO".index("O"))
+my_string = "HELNO"
+my_string[1] = "A" # strings are immutable
