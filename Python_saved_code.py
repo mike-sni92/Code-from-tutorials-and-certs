@@ -143,3 +143,34 @@ if remaining_attempts <= 0:
 else:
  print("system updated")
 #output = systemp updated
+
+
+
+
+
+name = ["El Lar", "Ken Lma", "Cam ros"]
+for i in name:
+  print("Welcome,", i)
+
+username = "elarson"
+print("1:" + username)
+def greet():
+    username = "bmoreno"
+    print("2:" + username)
+greet()
+print("3:" + username)
+
+
+#both outputs arguments per line. Quite annoying, would love to learn how to increment the numbers to the left automatically per new entry, not there yet.
+
+#BUILT IN FUNCTIONS
+a = 1
+b = 2
+c = 99
+print(max(a,b,c))
+
+time_list = [12, 2, 32, 19, 57, 22, 14]
+print(sorted(time_list))
+print(time_list)
+#What if you wanted to change the variable to the sorted numbers.
+
