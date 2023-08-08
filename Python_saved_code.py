@@ -235,3 +235,23 @@ with open("access_log.txt", "a") as file:
   file.write(line)
 
 # "a" append to file // "w" write to file
+
+
+#algo to count how many usernames is entered
+
+with open("login_attempts.txt", "r") as file:
+  file_text = file.read()
+usernames = file_text.split()
+print(usernames)
+
+def login_chk(login_list, current_user):
+  counter = 0
+  for i in login_list:
+    if i == current_user:
+      counter = counter + 1
+  if counter >= 3:
+    return "login attemps exceeded."
+  else:
+    return "You can login now."
+
+login_check(username, "#ENTER NAME TO CHECK HERE#")
