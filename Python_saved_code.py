@@ -255,3 +255,26 @@ def login_chk(login_list, current_user):
     return "You can login now."
 
 login_check(username, "#ENTER NAME TO CHECK HERE#")
+
+
+#DEBUGGING notes
+
+new_users = ["sgilmore", "bmoreno", "anotherentry"]
+approved_users = ["bmoreno", "tshah", "elarson"]
+def add_users():
+    for user in new_users:
+        print("line 5 - inside for loop")
+        if user in approved_users:
+            print("line 7 - inside if statement")
+            print(user,"already in list")
+        print("line 9 - before .append method")
+        approved_users.append(user)
+add_users()
+print(approved_users)
+
+#The print statement "line 5 - inside for loop" outputs twice, indicating that Python has entered the for loop for each username in new_users. This is as expected. 
+#Additionally, the print statement "line 7 - inside if statement" only outputs once, and this is also as expected because only one of these usernames was already in approved_users.
+
+#However, the print statement "line 9 - before .append method" outputs twice. This means the code calls the .append() method for both usernames even though one is already in approved_users. 
+#This helps isolate the logic error to this area. This can help you realize that the line of code approved_users.append(user) should be the body of an else statement so that it only executes when
+#user is not in approved_users.
