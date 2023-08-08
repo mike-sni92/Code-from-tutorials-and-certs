@@ -191,3 +191,47 @@ old[0:2] #indices
 print("HELLOOOOO".index("O"))
 my_string = "HELNO"
 my_string[1] = "A" # strings are immutable
+
+
+
+
+
+#WEEK 7 PYTHON
+
+
+with open("login_attempts", "r") as file:
+  file_text = file.read()
+print(file_text)
+
+#output = login_attempts content as string
+
+print(file_text.split())
+
+#output = login_attempts content as list with each space as own string
+
+approved_users = "elarson,bmoreno,tshah,sgilmore,eraab"
+print("before .split():", approved_users)
+approved_users = approved_users.split(",") #now displayed as --- after .split(): ['elarson', 'bmoreno', 'tshah', 'sgilmore', 'eraab']
+print("after .split():", approved_users)
+
+#list to string is done by .join
+approved_users = ["elarson", "bmoreno", "tshah", "sgilmore", "eraab"]
+print("before .join():", approved_users)
+approved_users = ",".join(approved_users)
+print("after .join():", approved_users)
+
+#The keyword with handles errors and manages external resources. 
+#When using with, Python knows to automatically release resources that would 
+#otherwise keep our system busy until the program finishes running. 
+#It's often used in file handling to automatically close a file after reading it.
+#To open files and then read them, we write a statement that begins with the keyword with.
+#Then, we use the open() function.
+
+# .read() converts files into strings
+
+"access_log.txt"
+line = "jrafael, 192.168.1.1, 4:51:27, True"
+with open("access_log.txt", "a") as file:
+  file.write(line)
+
+# "a" append to file // "w" write to file
