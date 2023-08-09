@@ -278,3 +278,24 @@ print(approved_users)
 #However, the print statement "line 9 - before .append method" outputs twice. This means the code calls the .append() method for both usernames even though one is already in approved_users. 
 #This helps isolate the logic error to this area. This can help you realize that the line of code approved_users.append(user) should be the body of an else statement so that it only executes when
 #user is not in approved_users.
+
+#algo to count how many usernames is entered
+
+with open("login_attempts.txt", "r") as file:
+  file_text = file.read()
+usernames = file_text.split()
+print(usernames)
+
+def login_chk(login_list, current_user):
+  counter = 0
+  for i in login_list:
+    if i == current_user:
+      counter = counter + 1
+  if counter >= 3:
+    return "login attemps exceeded."
+  else:
+    return "You can login now."
+
+login_check(username, "#ENTER NAME TO CHECK HERE#")
+
+
