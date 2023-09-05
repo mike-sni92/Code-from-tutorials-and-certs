@@ -299,3 +299,30 @@ def login_chk(login_list, current_user):
 login_check(username, "#ENTER NAME TO CHECK HERE#")
 
 
+
+
+
+
+
+
+#RED TEAM_Malware Development(Alh4zr3d yt)
+# boot up atk box on the server side, and compromised client.
+#dependencies, python socket library.
+
+{## tcpclient
+import socket
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+#select a port not in use, 
+s.connect((client_ip_OR_client_website,6969))
+##}
+
+
+{## tcpserver
+import socket
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+#select a port not in use, 
+s.bind((ip,port))
+s.listen
+##}
