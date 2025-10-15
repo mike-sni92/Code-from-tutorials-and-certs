@@ -37,3 +37,46 @@ while True:
 		move(East)
 	
 	
+
+// v1 Carrots
+
+while True:
+	for i in range(get_world_size()):
+		till()
+		plant(Entities.Carrot)
+		move(North)
+	for i in range(1):
+		move(East)
+	for i in range(get_world_size()):
+		till()
+		plant(Entities.Carrot)
+		move(North)
+	for i in range(1):
+		move(East)
+	for i in range(get_world_size()):
+		till()
+		plant(Entities.Carrot)
+		move(North)
+	for i in range(1):
+		move(East)
+		
+	for i in range(get_world_size()):
+			harvest()
+			move(North)
+	for i in range(1):
+			move(East)
+			do_a_flip()
+	for i in range(get_world_size()):
+			harvest()
+			move(North)
+	for i in range(1):
+			move(East)
+			do_a_flip()
+	for i in range(get_world_size()):
+			harvest()
+			move(North)
+	for i in range(1):
+			move(East)
+			do_a_flip()
+	
+	
