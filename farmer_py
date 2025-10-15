@@ -1,0 +1,39 @@
+
+
+while True:
+	for i in range(get_world_size()):
+		plant(Entities.Bush)
+		move(North)
+	for i in range(1):
+		move(East)
+	for i in range(get_world_size()):
+		plant(Entities.Bush)
+		move(North)
+	for i in range(1):
+		move(East)
+	for i in range(get_world_size()):
+		plant(Entities.Bush)
+		move(North)
+	for i in range(1):
+		move(East)
+		
+	for i in range(get_world_size()):
+		if can_harvest():
+			harvest()
+			move(North)
+	for i in range(1):
+		move(East)
+	for i in range(get_world_size()):
+		if can_harvest():
+			harvest()
+			move(North)
+	for i in range(1):
+		move(East)
+	for i in range(get_world_size()):
+		if can_harvest():
+			harvest()
+			move(North)
+	for i in range(1):
+		move(East)
+	
+	
